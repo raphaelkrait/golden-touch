@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(315deg, #dd5e89 0%, #f7bb97 100%);
+
+}
+
+.btn{
+      background: url("assets/img/gallery/backButton.png"); 
+
+  width: 64px;
+  height: 64px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed; 
+}
+.btn:hover{
+  transform: scale(1.1);
+
+}
+
+
+input[type="radio"] {
+  background-color: #fff01f;
+  font: inherit;
+  color: currentColor;
+  margin-right: 0.5rem;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(0.23em);
+}
+
+
+
+
+.quizBody {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #dd5e89 0%, #f7bb97 100%);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.quiz-container {
+  border-style: solid;
+  border-width: 10px;
+  background:-webkit-gradient(linear,left top,right bottom,color-stop(30%,#5f2c82 ),color-stop(70%,#49a09d));
+  border-radius: 15px;
+  box-shadow: -15px 15px 15px 15px rgba(100, 100, 100, 0.2);
+  width: 850px; 
+  overflow: hidden;
+}
+
+.quiz-header {
+  font-family: Tahoma, Verdana, sans-serif;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+h2 {
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+ul li label {
+  cursor: pointer;
+}
+
+button {
+  //background:-webkit-gradient(linear,left top,right bottom,color-stop(50%,#56ab2f ),color-stop(70%,#a8e063));
+  color: #fff
+  font-weight: 600;
+  border: none;
+  border-width: 2;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color:rgba(95,44,130,0.01);
+  font-weight: 600;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+  color: #fff
+  background-color: #5e3370;
+}

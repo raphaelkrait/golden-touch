@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quiz.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/gallery/quizlogo.png">
+    <title>Quiz App</title>
+  </head>
+<body>
+  <button class="btn" onclick="window.location.href='index.html';"><img src="assets/img/gallery/backButton.png" width="80" height="80"></button>
+<div class="quizBody">
+  <div class="quiz-container" id="quiz">
+      <div class="quiz-header">
+        <h2 id="question">Question text(5 questions left)</h2>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer">
+            <label for="a" id="first_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="b" class="answer">
+            <label for="b" id="second_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="c" class="answer">
+            <label for="c" id="third_text">Question</label>
+          </li>
+
+          <li>
+            <input type="radio" name="answer" id="d" class="answer">
+            <label for="d" id="forth_text">Question</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submitBtn"><img src="assets/img/gallery/nextBtn.png" height="70" width="70"></button>
+    </div>
+</div>
+</body>
+    
+    <script src="quiz.js"></script>
+
+</html>

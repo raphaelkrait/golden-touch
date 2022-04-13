@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+      function PromptSearch(){
+        var section;
+        section = window.prompt("Enter a section from above to go to");
+
+        if(section == "Home" || section == "home"){
+          alert("You are already at home!")
+        }
+        else if(section == "Overview" || section == "overview"){
+          location.href = "#overview";
+        }
+        else if(section == "Explanation" || section == "explanation"){
+          location.href = "#explanation";
+        }
+        else if(section == "Quiz" || section == "quiz"){
+          location.href = "#quiz";
+        }
+        else{
+          alert("This section doesn't exist");
+        }
+      }
+    </script>
+      
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Golden Touch</title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/logo.png">
+    
+    <link rel="manifest" href="assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>  
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#elements">The Game</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#overview"><b>Overview</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#explanation"><b>Explanation</b></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#quiz"><b>Quiz</b></a>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link active btn default" aria-current="page" onclick="PromptSearch();"><b>Search by prompt (JS)</b></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      <section id="home" style="background:-webkit-gradient(linear,left top,right bottom,color-stop(50%,#02aab0 ),color-stop(70%,#00cdac));">
+        
+
+        <div class="container">
+
+          <img src="assets/img/favicons/logo.png" height="500" width="500" alt="logo" style="float:right opacity:0.5;"/>
+
+          <div class="row align-items-center">
+
+            <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
+
+              <h1 class="fw-bold display-4 fs-4 fs-lg-6 fs-xxl-7 animation " style="color:#FFDF01;">The Golden Touch Game</h1>
+
+              <h1 class="text-700" >created by <span class="fw-bold">Raphael Krait</span></h1>
+              
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-0 circle-blend circle-blend-right circle-warning" id="overview">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 col-xxl-5 mx-auto text-center py-7">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">What is this game?</h5>
+              <p class="mb-0">This game was created to help people in need win money and have fun at the same time</p>
+            </div>
+          </div>
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/service.png);background-position:bottom center;background-size:contain;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="row flex-center">
+            <div class="col-xl-9">
+              <div class="row justify-content-center circle">
+                <div class="col-md-4 mb-4">
+                  <div class="card card-bg h-100 px-4 px-md-2 px-lg-3 px-xxl-4 pt-4">
+                    <div class="text-center">
+                      <div class="card-body text-center text-md-start">
+                        <h6 class="fw-bold fs-1">Have fun anytime, anywhere</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-3">Most basic idea meets most addictive one</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card card-bg h-100 px-4 px-md-2 px-lg-3 px-xxl-4 pt-4">
+                    <div class="text-center">
+                      <div class="card-body text-center text-md-start">
+                        <h6 class="fw-bold fs-1">Earn Coins</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-3">These in-game-currencies can be later converted to real money!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                  <div class="card card-bg h-100 px-4 px-md-2 px-lg-3 px-xxl-4 pt-4">
+                    <div class="text-bottom">
+                      <div class="card-body text-center text-md-start">
+                        <h6 class="fw-bold fs-1">The game's fame</h6>
+                        <p class="mt-3 mb-md-0 mb-lg-3">You'd be surprised how many people in the world are playing my game!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-5 circle-blend circle-blend-right-feature circle-cyan" id="explanation">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/feature-bg.png);background-position:right;background-size:auto;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          
+            <div class="col-lg-6 text-center mx-auto mb-3 mb-md-5 mt-4">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Explanation</h5>
+              
+            </div>
+          </div>
+         
+         
+      
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/product-bg-1.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder mt-n4" style="background-image:url(assets/img/illustrations/product-bg-2.png);background-position:left top;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container-xl">
+          <div class="row flex-center circle-blend circle-blend-left-product circle-cyan">
+            <div class="col-auto">
+              <div class="square shadow-square-bottom">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4 h-100"><img class="img-fluid border-img" src="assets/img/favicons/logo.png" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ms-lg-auto my-7 my-lg-0 px-sm-8 px-lg-0 ps-lg-2 ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">How is the game so simple<br>Yet so addictive?</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Whether you're bored, busy or anything this game is the perfect pass time.</p>
+              <p class="fs-1 mb-5 pe-xxl-8">The idea of having a ball bounce up and down waiting for you to press to hit a target seemed so entertaining</p>
+              
+            </div>
+          </div>
+          <div class="row flex-center pt-10 pt-md-6 pt-lg-10 circle-blend circle-blend-right-dedicated circle-danger">
+            <div class="col-auto ms-lg-auto order-md-1 text-center">
+              <div class="square shadow-square-top">
+                <div class="card product-card-bg">
+                  <div class="card-body p-4"><img class="img-fluid border-img" src="assets/img/gallery/coin.png" width="350" alt="..." /></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-0 ms-xl-auto my-7 my-xl-0 px-sm-8 px-lg-3 px-xl-0 me-xl-auto ps-xl-0">
+              <h1 class="fw-bold display-5 lh-sm my-4">The well designed <br> coin system</h1>
+              <p class="fs-1 mb-3 pe-xxl-8">Everyone likes the idea of owning a currency in some game or app especially in this era</p>
+              <p class="fs-1 mb-5 pe-xxl-8">where crypto and nfts are new next big thing!</p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="py-7">
+
+        <div class="container">
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/project-bg.png);background-position:right;background-size:auto;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="row justify-content-center circle-blend circle-blend-left-project circle-warning">
+            <div class="col-lg-6 text-center mx-auto mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">The Game's Future</h5>
+              <p class="mb-0">While most of the people playing the game won't believe it but our goal is to giveaway the profit we make to the players and charities</p>
+            </div>
+            <div class="col-xxl-9">
+              <div class="card project-card-bg mx-auto px-0">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col-12 col-md-6 col-lg-4 text-center"><img class="mb-3 mb-lg-3 img-fluid px-xl-0" src="assets/img/gallery/ss1.png" width="320" alt="project" /><img class="mb-3 mb-lg-0 img-fluid px-xl-0" src="assets/img/gallery/ss2.png" width="320" alt="project" /></div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center"><img class="mb-3 mb-lg-3 img-fluid px-xl-0" src="assets/img/gallery/ss3.png" width="320" alt="project" /><img class="mb-3 mb-lg-0 img-fluid px-xl-0" src="assets/img/gallery/ss4.png" width="320" alt="project" /></div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-auto mx-auto mt-6">
+              
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0" container container-lg-fluid container-xl="container container-lg-fluid container-xl">
+
+        <div class="container">
+          <div class="bg-holder" style="background-image:url(assets/img/illustrations/team-bg.png);background-position:left top;background-size:auto;">
+          </div>
+          <!--/.bg-holder-->
+
+          <div class="row justify-content-center mb-6">
+            <div class="col-lg-6 text-center mx-auto mb-7">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">A Huge Milestone!</h5>
+              <p class="mb-0">We Managed to reach an audience from outside of Lebanon and thats a huge achievement to start off!</p>
+            </div>  
+          </div> 
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <section class="py-5 mb-8">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/contact-us-bg.png);background-position:left bottom;background-size:auto;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="bg-holder" style="background-image:url(assets/img/gallery/contact-bg.png);background-position:center right ;background-size:contain;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row flex-center">
+            <div class="col-lg-5 mb-5">
+              <div class="card card-bg p-2">
+                <div class="card-body">
+                  <form>
+                    <div class="row mb-3 input-group-icon">
+                      <label class="col-sm-2 col-form-label visually-hidden" for="inputName">Name</label>
+                      <div class="col-sm-12">
+                        <input class="form-control rounded-pill border-white input-box" id="inputName" type="text" placeholder="Write your name" />
+                        <svg class="bi bi-person-fill input-box-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="row mb-3 input-group-icon">
+                      <label class="col-sm-2 col-form-label visually-hidden" for="inputEmail3">Email</label>
+                      <div class="col-sm-12">
+                        <input class="form-control rounded-pill border-white input-box" id="inputEmail3" type="email" placeholder="Write your email" />
+                        <svg class="bi bi-envelope-fill input-box-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="row mb-3 input-group-text-icon">
+                      <label class="col-sm-2 col-form-label visually-hidden" for="floatingTextarea2">Comments</label>
+                      <div class="col-sm-12">
+                        <textarea class="form-control rounded-3 border-white input-box" id="floatingTextarea2" placeholder="Write your review about the game" style="height: 150px"></textarea>
+                        <svg class="bi bi-pencil-fill input-box-text-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="d-grid">
+                          <button class="btn hover-top btn-glow btn-klean rounded-pill" type="submit">Submit </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1">
+              
+              <div class="d-flex align-items-center mb-5">
+                <div class="icon icon-primary"><span data-feather="mail"></span></div>
+                <div class="flex-1 ms-3">
+                  <p class="fw-bold mb-0">Email</p>
+                  <p>goldentouchgame25@gmail.com </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="icon icon-primary"><span data-feather="map-pin"></span></div>
+                <div class="flex-1 ms-3">
+                  <p class="fw-bold mb-0">Location</p>
+                  <p>Lebanon<br />Beirut, Fanar<br /></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section class="pb-0 pt-6" id="quiz">
+        <div class="bg-holder" style="background-image:url(assets/img/illustrations/footer-bg.png);background-position:center;background-size:cover;">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row justify-content-lg-between circle-blend-right circle-danger">
+            <div class="col-6 col-sm-4 col-lg-auto mb-3">
+              
+            </div>
+           <button class="btn hover-top btn-glow quizbtn"  onclick="window.location.href='quiz.html';" style="bottom:2rem;">Take the game quiz</button>
+            <div class="col-9 col-sm-6 col-lg-auto mb-3">
+
+              <div class="row">
+                      <div class="col-sm-12">
+                        
+              <h5 class="text-600 mb-3 fw-bold">Download the game</h5>
+              <ul class="list-unstyled list-inline my-3">
+                <li class="list-inline-item"><a class="text-decoration-none" href="https://play.google.com/store/apps/details?id=com.BlueHazeGames.GoldenTouch" target="_blank">Google Play</a></li>
+                <li class="list-inline-item">Soon on IOS!</li>
+                
+              </ul>
+              <p class="fw-semi-bold mt-4 mb-3">Get our news now!</p>
+              <label class="col-sm-2 col-form-label visually-hidden" for="inputEmail2">Email</label>
+              <div class="col-sm-12 input-group-icon">
+                <input class="form-control rounded-pill border-white py-1 px-4" id="inputEmail2" type="email" placeholder="email" />
+                <svg class="bi bi-envelope-fill input-box-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" viewBox="0 0 16 16" style="left:.8rem;">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <hr class="text-100 mb-0" />
+          <div class="row justify-content-md-between justify-content-evenly py-3">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+              <p class="fs--1 my-2 fw-bold">All rights Reserved &copy; Blue Haze Games, 2022</p>
+            </div>
+           
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/feather-icons/feather.min.js"></script>
+    <script>
+      feather.replace();
+    </script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
+  </body>
+
+</html>
